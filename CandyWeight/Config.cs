@@ -18,7 +18,7 @@ namespace CandyWeight
         public bool IsEnabled { get; set; } = true;
 
         /// <summary>
-        /// Gets or sets the adjusted weights of the candy's.
+        /// Gets or sets the adjusted weights of the candies.
         /// </summary>
         public Dictionary<CandyKindID, float> Weights { get; set; } = new()
         {
