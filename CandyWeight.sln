@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PinkCandyWeight", "PinkCandyWeight\PinkCandyWeight.csproj", "{F767AAE0-DA6E-473F-AFD6-E8AEC511FEF5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandyWeight", "CandyWeight\CandyWeight.csproj", "{F767AAE0-DA6E-473F-AFD6-E8AEC511FEF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

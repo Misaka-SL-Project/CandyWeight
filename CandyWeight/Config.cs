@@ -5,9 +5,11 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace PinkCandyWeight
+namespace CandyWeight
 {
+    using System.Collections.Generic;
     using Exiled.API.Interfaces;
+    using InventorySystem.Items.Usables.Scp330;
 
     /// <inheritdoc />
     public class Config : IConfig
@@ -16,8 +18,11 @@ namespace PinkCandyWeight
         public bool IsEnabled { get; set; } = true;
 
         /// <summary>
-        /// Gets or sets the spawn chance weight.
+        /// Gets or sets the adjusted weights of the candy's.
         /// </summary>
-        public float Weight { get; set; } = 1f;
+        public Dictionary<CandyKindID, float> Weights { get; set; } = new()
+        {
+            { CandyKindID.Pink, 1f },
+        };
     }
 }

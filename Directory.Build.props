@@ -2,7 +2,7 @@
 <Project>
     <!-- StyleCop Analyzers configuration -->
     <PropertyGroup>
-        <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)\PinkCandyWeight.ruleset</CodeAnalysisRuleSet>
+        <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)\CandyWeight.ruleset</CodeAnalysisRuleSet>
     </PropertyGroup>
 
     <ItemGroup>

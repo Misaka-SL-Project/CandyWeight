@@ -5,9 +5,10 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace PinkCandyWeight
+namespace CandyWeight
 {
     using System;
+    using CandyWeight.Patches;
     using Exiled.API.Features;
     using HarmonyLib;
 
@@ -25,23 +26,23 @@ namespace PinkCandyWeight
         public override string Author => "Build";
 
         /// <inheritdoc/>
-        public override string Name => "PinkCandyWeight";
+        public override string Name => "CandyWeight";
 
         /// <inheritdoc/>
-        public override string Prefix => "PinkCandyWeight";
+        public override string Prefix => "CandyWeight";
 
         /// <inheritdoc/>
-        public override Version Version { get; } = new Version(1, 0, 0);
+        public override Version Version { get; } = new(1, 0, 0);
 
         /// <inheritdoc/>
-        public override Version RequiredExiledVersion { get; } = new Version(5, 1, 3);
+        public override Version RequiredExiledVersion { get; } = new(5, 2, 1);
 
         /// <inheritdoc/>
         public override void OnEnabled()
         {
             Instance = this;
             harmony = new Harmony($"pinkCandyWeight.{DateTime.UtcNow.Ticks}");
-            harmony.PatchAll();
+            SpawnChanceWeight.Patch(harmony);
             base.OnEnabled();
         }
 
