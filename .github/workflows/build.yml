@@ -1,4 +1,4 @@
-name: PinkCandyWeight CI
+name: CandyWeight CI
 on: [push, pull_request]
 
 jobs:
@@ -43,4 +43,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: Build Results
-        path: PinkCandyWeight/bin/Release
+        path: CandyWeight/bin/Release
