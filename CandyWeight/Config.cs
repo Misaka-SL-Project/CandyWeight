@@ -17,6 +17,8 @@ namespace CandyWeight
         /// <inheritdoc/>
         public bool IsEnabled { get; set; } = true;
 
+        public bool Debug { get; set; } = true;
+
         /// <summary>
         /// Gets or sets the adjusted weights of the candies.
         /// </summary>
