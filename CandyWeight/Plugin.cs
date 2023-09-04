@@ -32,10 +32,10 @@ namespace CandyWeight
         public override string Prefix => "CandyWeight";
 
         /// <inheritdoc/>
-        public override Version Version { get; } = new(3, 0, 1);
+        public override Version Version { get; } = new(4, 0, 0);
 
         /// <inheritdoc/>
-        public override Version RequiredExiledVersion { get; } = new(7, 0, 0);
+        public override Version RequiredExiledVersion { get; } = new(8, 0, 0);
 
         /// <inheritdoc/>
         public override void OnEnabled()
